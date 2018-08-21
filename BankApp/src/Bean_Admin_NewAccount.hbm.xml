@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 16, 2018 8:33:47 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="admin.Bean_Admin_NewAccount" table="user_registration">
+        <id name="account_holder_name" type="java.lang.String">
+            <column name="ACCOUNT_HOLDER_NAME" />
+            <generator class="assigned" />
+        </id>
+        <property name="last_name" type="java.lang.String">
+            <column name="LAST_NAME" />
+        </property>
+        <property name="dateofbirth" type="java.lang.String">
+            <column name="DATEOFBIRTH" />
+        </property>
+        <property name="pan_number" type="java.lang.String">
+            <column name="PAN_NUMBER" />
+        </property>
+        <property name="nominee_name" type="java.lang.String">
+            <column name="NOMINEE_NAME" />
+        </property>
+        <property name="account_type" type="java.lang.String">
+            <column name="ACCOUNT_TYPE" />
+        </property>
+        <property name="atm_card" type="java.lang.String">
+            <column name="ATM_CARD" />
+        </property>
+        <property name="credit_card" type="java.lang.String">
+            <column name="CREDIT_CARD" />
+        </property>
+        <property name="cheque_book" type="java.lang.String">
+            <column name="CHEQUE_BOOK" />
+        </property>
+        <property name="username" type="java.lang.String">
+            <column name="USERNAME" />
+        </property>
+        <property name="password" type="java.lang.String">
+            <column name="PASSWORD" />
+        </property>
+        <property name="age" type="int">
+            <column name="AGE" />
+        </property>
+        <property name="aadhaar_number" type="java.lang.String">
+            <column name="AADHAAR_NUMBER" />
+        </property>
+        <property name="mobile_number" type="java.lang.String">
+            <column name="MOBILE_NUMBER" />
+        </property>
+        <property name="account_number" type="java.lang.String">
+            <column name="ACCOUNT_NUMBER" />
+        </property>
+    </class>
+</hibernate-mapping>

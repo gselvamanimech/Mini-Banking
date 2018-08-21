@@ -1,0 +1,148 @@
+*{
+	margin: 0px;
+	//font-family: cursive;
+}
+nav{
+	top:0px;
+	background-color: #4F7CEF;
+	position: fixed;
+	width: 1300px;
+	padding-top: 20px;
+	height: 120px;
+}
+.head{
+	margin: 0px;
+}
+.nav-img{
+	width: 200px;
+	height: 130px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+.c{
+	position: relative;
+	top: 40px;
+	left: -60px;
+	font-size: 20px;
+	color: white;
+}
+.s{
+	position: relative;
+	left: 220px;
+}
+.nav{
+	display: inline-block;
+}
+.nav-img:hover{
+	transform: scale(1.05); 
+}
+.a{
+	text-decoration: none;
+	display: inline-block;
+	padding: 3px 10px;
+	color: white;
+	font-size: 15px;
+}
+.a:hover{
+	color: white;
+	cursor:pointer;
+	transform: scale(1.1);
+}
+.imghome{
+	width: 1300px;
+	display: table-row;
+	margin-right: auto;
+	margin-left: auto;
+}
+.li{
+	display: inline-block;
+	padding: 3px 10px;
+	color: white;
+	font-size: 15px;
+}
+.li:hover{
+	color: grey;
+	transition: 0s;
+	cursor:pointer;
+}
+.link{
+	margin-left:700px;
+}
+.col{
+	padding-top: 20px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	color:white;
+	height:	150px;
+	width:1300px;
+	display: table-cell;
+}
+.col:hover{
+	color: #FBB112;
+	transition: 0.5s;
+	cursor:pointer;
+}
+.rights{
+	text-align: center;
+}
+.footer{
+	background-color: grey;
+}
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+.li-content1{
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 90px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 12px 0px;
+	z-index: 1;
+}
+.li-content2{
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 180px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 12px 0px;
+	z-index: 1;
+}
+.li:hover{
+	color: white;
+	cursor:pointer;
+	transform: scale(1.1);
+}
+.li:hover .li-content1{
+	 display: block;
+}
+.li:hover .li-content2{
+	 display: block;
+}
+#root {
+	max-width: 1300px;
+	margin: auto;
+	background: white;
+	padding: 10px;
+}
+#nav_i{
+	margin-left:500px;
+	margin-right:auto;
+	padding-top:50px;
+	padding-left:50px;
+	border: 2px solid;
+	border-color: grey;
+	width: 200px;
+	height: 160px;
+}
+#nav_i span{
+	margin-left: 50px;
+}
+#btn{
+	margin-left: 50px;
+	margin-top: 20px;
+}
