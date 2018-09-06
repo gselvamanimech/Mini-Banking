@@ -115,7 +115,7 @@ public class E_Services extends HttpServlet {
 							+ "alert(\"Your ATM request is Processing.Please check your E-mail for Confirmation.\");"
 							+ "</script>");
 					
-					MailServices.send("aboutservlets@gmail.com","about@123","aboutservlets@gmail.com","Your Request Has Been Submitted","Your ATM Card will be Sent to you within 2 days");
+					MailServices.send("Sender Mail","","Receiver Mail","Subject","Message");
 	        	}else if ((str.equals("Not-Issued")) && (mode.equals("Ordinary"))) {
 	        		total=beforeNet.subtract(ordAmountATM);
 				    String hql1 = "UPDATE Bean_NetAmount set netamount = '"+total+"' where accountnumber = '"+accnumber+"'";
@@ -138,7 +138,7 @@ public class E_Services extends HttpServlet {
 							+ "alert(\"Your ATM request is Processing.Please check your E-mail for Confirmation.\");"
 							+ "</script>");
 					
-					MailServices.send("aboutservlets@gmail.com","about@123","aboutservlets@gmail.com","Your Request Has Been Submitted","Your ATM Card will be Sent to you within 10 days");
+					MailServices.send("Sender Mail","","Receiver Mail","Subject","Message");
 				}else if(str.equals("Issued")) {
 					RequestDispatcher rd=request.getRequestDispatcher("E-Services.jsp");
 					rd.include(request, response);
@@ -171,7 +171,7 @@ public class E_Services extends HttpServlet {
 							+ "alert(\" Your Credit card request is Processing.Please check your E-mail for Confirmation.\");"
 							+ "</script>");
 					
-					MailServices.send("aboutservlets@gmail.com","about@123","aboutservlets@gmail.com","Your Request Has Been Submitted","Your Credit Card will be Sent to you within 2 days");				
+					MailServices.send("Sender Mail","","Receiver Mail","Subject","Message");				
 	        	}else if ((credit.equals("Not-Issued")) && (mode.equals("Ordinary"))) {
 	        		total=beforeNet.subtract(ordAmountCredit);
 				    String hql1 = "UPDATE Bean_NetAmount set netamount = '"+total+"' where accountnumber = '"+accnumber+"'";
@@ -194,7 +194,7 @@ public class E_Services extends HttpServlet {
 							+ "alert(\" Your Credit card request is Processing.Please check your E-mail for Confirmation.\");"
 							+ "</script>");
 					
-					MailServices.send("aboutservlets@gmail.com","about@123","aboutservlets@gmail.com","Your Request Has Been Submitted","Your Credit Card will be Sent to you within 10 days");
+					MailServices.send("Sender Mail","","Receiver Mail","Subject","Message");
 				}else if(credit.equals("Issued")) {
 					RequestDispatcher rd=request.getRequestDispatcher("E-Services.jsp");
 					rd.include(request, response);
@@ -227,7 +227,7 @@ public class E_Services extends HttpServlet {
 					out.println("<script>"
 							+ "alert(\"Your Cheque book request is Processing.Please check your E-mail for Confirmation.\");"
 							+ "</script>");
-					MailServices.send("aboutservlets@gmail.com","about@123","aboutservlets@gmail.com","Your Request Has Been Submitted","Your Cheque Book will be Sent to you within 2 days");			
+					MailServices.send("Sender Mail","","Receiver Mail","Subject","Message");			
 	        	}else if ((Cheque.equals("Not-Issued")) && (mode.equals("Ordinary"))) {
 	        		total=beforeNet.subtract(ordAmountCheque);
 				    String hql1 = "UPDATE Bean_NetAmount set netamount = '"+total+"' where accountnumber = '"+accnumber+"'";
@@ -249,7 +249,7 @@ public class E_Services extends HttpServlet {
 					out.println("<script>"
 							+ "alert(\"Your Cheque book request is Processing.Please check your E-mail for Confirmation.\");"
 							+ "</script>");
-					MailServices.send("aboutservlets@gmail.com","about@123","aboutservlets@gmail.com","Your Request Has Been Submitted","Your Cheque Book will be Sent to you within 10 days");
+					MailServices.send("Sender Mail","","Receiver Mail","Subject","Message");
 				}else if(Cheque.equals("Issued")) {
 					RequestDispatcher rd=request.getRequestDispatcher("E-Services.jsp");
 					rd.include(request, response);
